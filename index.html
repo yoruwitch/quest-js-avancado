@@ -10,11 +10,17 @@
             href="src/imgs/github-mark.svg"
             type="image/x-icon"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
         <title>Find an user!</title>
     </head>
     <body>
         <main>
-            <img src="src/imgs/github-mark.svg" alt="" />
+            <img src="src/imgs/github-mark.svg" alt="" class="github-icon" />
             <section class="search-bar">
                 <input
                     type="text"
@@ -25,16 +31,23 @@
             </section>
 
             <div class="profile-data">
-              <img src="src/imgs/pexels-cottonbro-studio-5990132.jpg" alt="" class="user_avatar" >
-            
-              <h2>Fullname here</h2>
-              <h2>Username</h2>
-              <p>Bio</p>
+                <img
+                    src="src/imgs/pexels-cottonbro-studio-5990132.svg"
+                    alt=""
+                    class="user_avatar"
+                />
 
-              <i class="fa-solid fa-user-group"></i> Followers: 456556
-              <i class="fa-solid fa-user-group"></i> Following: 456556
+                <h2>Fullname here</h2>
+                <h2>Username</h2>
+                <p>Bio</p>
+
+                <section class="followers">
+                    <i class="fa-solid fa-user-group follow-icon"></i>
+                    Followers: 456556
+                    <i class="fa-solid fa-user-group follow-icon"></i>
+                    Following: 456556
+                </section>
             </div>
-
         </main>
     </body>
     <script

@@ -1,3 +1,51 @@
 body {
     background: linear-gradient(0.25turn, #fae5e500, #060404);
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+img .github-icon {
+    max-width: 10%;
+}
+
+#input-search {
+    margin: 10px 0 10px 0;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.seach-button {
+    cursor: pointer;
+}
+
+.follow-icon,
+.seach-button {
+    font-size: 20px;
+}
+
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_avatar {
+    width: 50%;
+    height: 50%;
+    border-radius: 100px;
+}
+
+.followers {
+    margin-top: 10px;
+}
