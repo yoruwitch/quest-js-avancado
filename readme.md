@@ -1,0 +1,1 @@
+Images used: Photo by cottonbro studio: https://www.pexels.com/photo/focused-man-with-gray-hair-5990132/
