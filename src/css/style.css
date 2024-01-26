@@ -29,7 +29,7 @@ img .github-icon {
 }
 
 .follow-icon,
-.seach-button {
+.seach_button {
     font-size: 20px;
 }
 
@@ -40,12 +40,14 @@ img .github-icon {
     align-items: center;
 }
 
+.user_avatar,
+.user_info,
+.followers {
+    margin-top: 10px;
+}
 .user_avatar {
     width: 50%;
     height: 50%;
     border-radius: 100px;
 }
 
-.followers {
-    margin-top: 10px;
-}
