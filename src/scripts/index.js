@@ -1,7 +1,8 @@
 let base_url = "https://api.github.com/users";
 let seach_button = document.querySelector(".seach_button");
-let search_bar = document.querySelector("#search_bar");
+let input_bar = document.querySelector("#input_bar");
 let profile_data = document.querySelector(".profile_data");
+let repositories = document.querySelector(".repositories");
 
 async function getUser(userName) {
     const response = await fetch(`${base_url}/${userName}`);
@@ -31,7 +32,31 @@ async function getUser(userName) {
     `;
 }
 
+async function getRepositories(userName) {
+    const response = await fetch(
+        `${base_url}/${userName}/repos?per_page=${10}`
+    );
+    let repositoriesData = await response.json();
+
+    let displayedRepositories = "";
+    repositoriesData.forEach((repository) => {
+        displayedRepositories += `<li class="repository"><a href="${repository.html_url}" target="_blank">${repository.name}</a></li>`;
+    });
+
+
+    repositories.innerHTML = `
+    <section class="repositories">
+                <h2>Repositories</h2>
+                <br />
+                <ul>
+                ${displayedRepositories}
+                </ul>
+            </section>
+    `;
+}
+
 seach_button.addEventListener("click", () => {
-    const userName = search_bar.value;
+    const userName = input_bar.value;
     getUser(userName);
+    getRepositories(userName);
 });

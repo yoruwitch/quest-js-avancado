@@ -14,7 +14,7 @@ img .github-icon {
     max-width: 10%;
 }
 
-#input_bar{
+#input_bar {
     margin: 10px 0 10px 0;
     width: 300px;
     height: 30px;
@@ -34,7 +34,8 @@ img .github-icon {
 }
 
 .profile_data,
-.user_info {
+.user_info,
+.repositories {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,20 +55,16 @@ img .github-icon {
 }
 
 /*REPOSITORIES SECTION*/
-/* 
-.repositories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .repository {
     cursor: pointer;
-    /* border: 1px solid red; */
     border-radius: 5px;
     text-align: center;
     padding: 15px;
     background-color: #fff;
+}
+a {
+    color: #060404;
 }
 
 .repository:hover {
